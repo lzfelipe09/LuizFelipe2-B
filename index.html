@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Ferreira - Restaurante</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Seção Inicial -->
+  <header class="hero">
+    <div class="overlay">
+      <h1>Bem-vindo ao La Ferreira</h1>
+      <p>A sofisticação e tradição da gastronomia.</p>
+      <a href="#cardapio" class="btn">Explore Nosso Cardápio</a>
+    </div>
+  </header>
+
+  <!-- Seção História -->
+  <section id="historia" class="section">
+    <h2>Sobre o Restaurante</h2>
+    <p>Com mais de 10 anos de história, o <strong>La Ferreira</strong> nasceu da paixão de Luiz Felipe Ferreira Rodrigues pela culinária de alta qualidade. Cada prato é uma obra-prima que une tradição e inovação.</p>
+  </section>
+
+  <!-- Cardápio Digital -->
+  <section id="cardapio" class="section">
+    <h2>Nosso Cardápio</h2>
+    <div class="menu-category">
+      <h3>Entradas</h3>
+      <div class="menu-item">
+        <img src="prato1.jpg" alt="Entrada 1">
+        <div class="menu-details">
+          <h4>Entrada Gourmet</h4>
+          <p>Uma combinação de sabores refinados, perfeito para começar sua refeição.</p>
+          <p class="preco">R$ 50,00</p>
+        </div>
+      </div>
+      <!-- Repetir para outros itens do cardápio -->
+    </div>
+    <div class="menu-category">
+      <h3>Pratos Principais</h3>
+      <div class="menu-item">
+        <img src="prato2.jpg" alt="Prato Principal 1">
+        <div class="menu-details">
+          <h4>Prato Clássico</h4>
+          <p>Preparado com ingredientes frescos, uma explosão de sabores no seu paladar.</p>
+          <p class="preco">R$ 120,00</p>
+        </div>
+      </div>
+      <!-- Repetir para outros pratos principais -->
+    </div>
+  </section>
+
+  <!-- Seção Contato -->
+  <section id="contato" class="section">
+    <h2>Contato</h2>
+    <p>Endereço: Rua Castro, 123 - Centro</p>
+    <p>Telefone: (44) 99938-5944</p>
+    <p>Para reservas ou informações, entre em contato conosco ou preencha o formulário abaixo.</p>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 La Ferreira. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
