@@ -48,6 +48,17 @@
             font-size: 1.2em;
             margin: 10px 0;
             line-height: 1.6;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .cardapio img {
+            width: 100px;
+            height: 100px;
+            margin-left: 20px;
+            object-fit: cover;
+            border-radius: 8px;
         }
 
         /* Estilo da história do restaurante */
@@ -74,6 +85,26 @@
             color: #ffcc00;
             text-decoration: none;
         }
+
+        /* Seção de informações de contato */
+        .contato {
+            background-color: #e1e1e1;
+            padding: 40px;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        .contato h3 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .contato p {
+            font-size: 1.1em;
+            text-align: center;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -96,25 +127,60 @@
             <h2 class="section-title">Cardápio</h2>
             <h3>Entradas</h3>
             <ul>
-                <li>Caviar Beluga com Blinis e Creme Fraiche</li>
-                <li>Tartar de Salmão com Abacate e Vinagrete de Limão Siciliano</li>
-                <li>Foie Gras com Geléia de Figo e Pão de Brioche</li>
+                <li>
+                    <span>Caviar Beluga com Blinis e Creme Fraiche - R$ 180</span>
+                    <img src="https://via.placeholder.com/100" alt="Caviar Beluga">
+                </li>
+                <li>
+                    <span>Tartar de Salmão com Abacate e Vinagrete de Limão Siciliano - R$ 120</span>
+                    <img src="https://via.placeholder.com/100" alt="Tartar de Salmão">
+                </li>
+                <li>
+                    <span>Foie Gras com Geléia de Figo e Pão de Brioche - R$ 150</span>
+                    <img src="https://via.placeholder.com/100" alt="Foie Gras">
+                </li>
             </ul>
 
             <h3>Pratos Principais</h3>
             <ul>
-                <li>Filet Mignon ao Molho de Vinho do Porto com Purê de Batatas Trufado</li>
-                <li>Linguine com Lagosta e Molho de Manteiga de Limão</li>
-                <li>Risoto de Aspargos com Trufas Negras</li>
+                <li>
+                    <span>Filet Mignon ao Molho de Vinho do Porto com Purê de Batatas Trufado - R$ 250</span>
+                    <img src="https://via.placeholder.com/100" alt="Filet Mignon">
+                </li>
+                <li>
+                    <span>Linguine com Lagosta e Molho de Manteiga de Limão - R$ 220</span>
+                    <img src="https://via.placeholder.com/100" alt="Linguine com Lagosta">
+                </li>
+                <li>
+                    <span>Risoto de Aspargos com Trufas Negras - R$ 180</span>
+                    <img src="https://via.placeholder.com/100" alt="Risoto de Aspargos">
+                </li>
             </ul>
 
             <h3>Sobremesas</h3>
             <ul>
-                <li>Torta de Chocolate Belga com Creme de Avelã</li>
-                <li>Panna Cotta com Frutas Vermelhas e Redução de Baunilha</li>
-                <li>Macarons Sortidos</li>
+                <li>
+                    <span>Torta de Chocolate Belga com Creme de Avelã - R$ 90</span>
+                    <img src="https://via.placeholder.com/100" alt="Torta de Chocolate">
+                </li>
+                <li>
+                    <span>Panna Cotta com Frutas Vermelhas e Redução de Baunilha - R$ 80</span>
+                    <img src="https://via.placeholder.com/100" alt="Panna Cotta">
+                </li>
+                <li>
+                    <span>Macarons Sortidos - R$ 70</span>
+                    <img src="https://via.placeholder.com/100" alt="Macarons">
+                </li>
             </ul>
         </section>
+    </div>
+
+    <!-- Seção de Informações de Contato -->
+    <div class="contato">
+        <h3>Informações de Contato</h3>
+        <p>Telefone: (11) 1234-5678</p>
+        <p>Email: contato@laferreira.com.br</p>
+        <p>Endereço: Rua das Flores, 123, São Paulo, SP</p>
     </div>
 
     <!-- Rodapé -->
@@ -124,3 +190,4 @@
 
 </body>
 </html>
+
