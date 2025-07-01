@@ -1,99 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Ferreira - Restaurante</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Ferreira - Restaurante</title>
+    <style>
+        /* Estilo geral do site */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2; /* Cinza claro */
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #333; /* Cinza escuro */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2.5em;
+            font-family: 'Georgia', serif;
+        }
+
+        /* Estilo do conteúdo */
+        .content {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: 'Georgia', serif;
+            color: #333;
+        }
+
+        .cardapio ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .cardapio li {
+            font-size: 1.2em;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        /* Estilo da história do restaurante */
+        .historia {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            text-align: justify;
+            color: #555;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-  <!-- Cabeçalho -->
-  <header class="header">
-    <nav class="navbar">
-      <a href="#" class="logo">La Ferreira</a>
-      <ul class="nav-links">
-        <li><a href="#historia">História</a></li>
-        <li><a href="#cardapio">Cardápio</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- Seção Hero -->
-  <section class="hero">
-    <div class="hero-overlay">
-      <h1>Bem-vindo ao La Ferreira</h1>
-      <p>Uma experiência única de sabores sofisticados e ambiente acolhedor.</p>
-      <a href="#cardapio" class="btn">Explore Nosso Cardápio</a>
-    </div>
-  </section>
+    <!-- Cabeçalho -->
+    <header>
+        La Ferreira
+    </header>
 
-  <!-- História -->
-  <section id="historia" class="section historia">
+    <!-- Conteúdo principal -->
     <div class="content">
-      <h2>Sobre o Restaurante</h2>
-      <p>O <strong>La Ferreira</strong> foi fundado por Luiz Felipe Ferreira Rodrigues com o objetivo de proporcionar uma experiência gastronômica única. Cada prato que servimos é resultado de uma combinação cuidadosa entre tradição e inovação. A paixão pela culinária e o desejo de criar um ambiente sofisticado e acolhedor para nossos clientes estão presentes em cada detalhe.</p>
+        <!-- História do Restaurante -->
+        <section class="historia">
+            <h2 class="section-title">História do Restaurante</h2>
+            <p>Fundado em 1995 por um visionário chef, o restaurante La Ferreira nasceu com o objetivo de oferecer uma experiência gastronômica única, combinando a tradição da cozinha clássica francesa com ingredientes e influências da culinária contemporânea. Localizado em um ambiente acolhedor e elegante, o La Ferreira é o destino ideal para quem busca sabores refinados e pratos preparados com maestria. A cada visita, nosso compromisso é proporcionar aos nossos clientes não apenas uma refeição, mas uma verdadeira celebração dos sentidos. Se você procura um ambiente sofisticado para celebrar momentos especiais, o La Ferreira é o lugar certo para você.</p>
+        </section>
+
+        <!-- Cardápio -->
+        <section class="cardapio">
+            <h2 class="section-title">Cardápio</h2>
+            <h3>Entradas</h3>
+            <ul>
+                <li>Caviar Beluga com Blinis e Creme Fraiche</li>
+                <li>Tartar de Salmão com Abacate e Vinagrete de Limão Siciliano</li>
+                <li>Foie Gras com Geléia de Figo e Pão de Brioche</li>
+            </ul>
+
+            <h3>Pratos Principais</h3>
+            <ul>
+                <li>Filet Mignon ao Molho de Vinho do Porto com Purê de Batatas Trufado</li>
+                <li>Linguine com Lagosta e Molho de Manteiga de Limão</li>
+                <li>Risoto de Aspargos com Trufas Negras</li>
+            </ul>
+
+            <h3>Sobremesas</h3>
+            <ul>
+                <li>Torta de Chocolate Belga com Creme de Avelã</li>
+                <li>Panna Cotta com Frutas Vermelhas e Redução de Baunilha</li>
+                <li>Macarons Sortidos</li>
+            </ul>
+        </section>
     </div>
-  </section>
 
-  <!-- Cardápio -->
-  <section id="cardapio" class="section cardapio">
-    <div class="content">
-      <h2>Nosso Cardápio</h2>
-      <div class="menu-categories">
-        <!-- Entradas -->
-        <div class="menu-category">
-          <h3>Entradas</h3>
-          <div class="menu-item">
-            <img src="prato1.jpg" alt="Entrada Gourmet">
-            <div class="menu-info">
-              <h4>Entrada Gourmet</h4>
-              <p>Uma combinação de sabores refinados, perfeito para começar sua refeição.</p>
-              <p class="price">R$ 50,00</p>
-            </div>
-          </div>
-          <!-- Repetir para outras entradas -->
-        </div>
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 La Ferreira | <a href="#">Contate-nos</a></p>
+    </footer>
 
-        <!-- Pratos Principais -->
-        <div class="menu-category">
-          <h3>Pratos Principais</h3>
-          <div class="menu-item">
-            <img src="prato2.jpg" alt="Prato Clássico">
-            <div class="menu-info">
-              <h4>Prato Clássico</h4>
-              <p>Preparado com ingredientes frescos, uma explosão de sabores no seu paladar.</p>
-              <p class="price">R$ 120,00</p>
-            </div>
-          </div>
-          <!-- Repetir para outros pratos principais -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contato -->
-  <section id="contato" class="section contato">
-    <div class="content">
-      <h2>Contato</h2>
-      <p>Endereço: Rua Castro Alves, 123 - Centro</p>
-      <p>Telefone: (44) 99938-5944</p>
-      <p>Para reservas ou informações, entre em contato conosco ou preencha o formulário abaixo.</p>
-      <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-        <button type="submit" class="btn">Enviar</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Rodapé -->
-  <footer>
-    <p>&copy; 2025 La Ferreira. Todos os direitos reservados.</p>
-  </footer>
 </body>
 </html>
