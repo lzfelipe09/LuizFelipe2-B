@@ -1,193 +1,307 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Ferreira - Restaurante</title>
-    <style>
-        /* Estilo geral do site */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f2f2f2; /* Cinza claro */
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-
-        /* Cabeçalho */
-        header {
-            background-color: #333; /* Cinza escuro */
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            font-size: 2.5em;
-            font-family: 'Georgia', serif;
-        }
-
-        /* Estilo do conteúdo */
-        .content {
-            padding: 40px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            font-size: 2em;
-            margin-bottom: 20px;
-            text-align: center;
-            font-family: 'Georgia', serif;
-            color: #333;
-        }
-
-        .cardapio ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .cardapio li {
-            font-size: 1.2em;
-            margin: 10px 0;
-            line-height: 1.6;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .cardapio img {
-            width: 100px;
-            height: 100px;
-            margin-left: 20px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-
-        /* Estilo da história do restaurante */
-        .historia {
-            font-size: 1.2em;
-            line-height: 1.8;
-            margin-bottom: 40px;
-            text-align: justify;
-            color: #555;
-        }
-
-        /* Rodapé */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        footer a {
-            color: #ffcc00;
-            text-decoration: none;
-        }
-
-        /* Seção de informações de contato */
-        .contato {
-            background-color: #e1e1e1;
-            padding: 40px;
-            margin-top: 40px;
-            border-radius: 8px;
-        }
-
-        .contato h3 {
-            text-align: center;
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        .contato p {
-            font-size: 1.1em;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Cabeçalho -->
-    <header>
-        La Ferreira
-    </header>
-
-    <!-- Conteúdo principal -->
-    <div class="content">
-        <!-- História do Restaurante -->
-        <section class="historia">
-            <h2 class="section-title">História do Restaurante</h2>
-            <p>Fundado em 1995 por um visionário chef, o restaurante La Ferreira nasceu com o objetivo de oferecer uma experiência gastronômica única, combinando a tradição da cozinha clássica francesa com ingredientes e influências da culinária contemporânea. Localizado em um ambiente acolhedor e elegante, o La Ferreira é o destino ideal para quem busca sabores refinados e pratos preparados com maestria. A cada visita, nosso compromisso é proporcionar aos nossos clientes não apenas uma refeição, mas uma verdadeira celebração dos sentidos. Se você procura um ambiente sofisticado para celebrar momentos especiais, o La Ferreira é o lugar certo para você.</p>
-        </section>
-
-        <!-- Cardápio -->
-        <section class="cardapio">
-            <h2 class="section-title">Cardápio</h2>
-            <h3>Entradas</h3>
-            <ul>
-                <li>
-                    <span>Caviar Beluga com Blinis e Creme Fraiche - R$ 180</span>
-                    <img src="caviar.jpg" alt="Caviar Beluga">
-                </li>
-                <li>
-                    <span>Tartar de Salmão com Abacate e Vinagrete de Limão Siciliano - R$ 120</span>
-                    <img src="tartare-de-salmao-com-mousse-de-abacate.jpg" alt="Tartar de Salmão">
-                </li>
-                <li>
-                    <span>Foie Gras com Geléia de Figo e Pão de Brioche - R$ 150</span>
-                    <img src="cozinha-francesa-aperitivo.jpg" alt="Foie Gras">
-                </li>
-            </ul>
-
-            <h3>Pratos Principais</h3>
-            <ul>
-                <li>
-                    <span>Filet Mignon ao Molho de Vinho do Porto com Purê de Batatas Trufado - R$ 250</span>
-                    <img src="imagem" alt="Filet Mignon">
-                </li>
-                <li>
-                    <span>Linguine com Lagosta e Molho de Manteiga de Limão - R$ 220</span>
-                    <img src="https://via.placeholder.com/100" alt="Linguine com Lagosta">
-                </li>
-                <li>
-                    <span>Risoto de Aspargos com Trufas Negras - R$ 180</span>
-                    <img src="https://via.placeholder.com/100" alt="Risoto de Aspargos">
-                </li>
-            </ul>
-
-            <h3>Sobremesas</h3>
-            <ul>
-                <li>
-                    <span>Torta de Chocolate Belga com Creme de Avelã - R$ 90</span>
-                    <img src="https://via.placeholder.com/100" alt="Torta de Chocolate">
-                </li>
-                <li>
-                    <span>Panna Cotta com Frutas Vermelhas e Redução de Baunilha - R$ 80</span>
-                    <img src="https://via.placeholder.com/100" alt="Panna Cotta">
-                </li>
-                <li>
-                    <span>Macarons Sortidos - R$ 70</span>
-                    <img src="https://via.placeholder.com/100" alt="Macarons">
-                </li>
-            </ul>
-        </section>
-    </div>
-
-    <!-- Seção de Informações de Contato -->
-    <div class="contato">
-        <h3>Informações de Contato</h3>
-        <p>Telefone: (11) 1234-5678</p>
-        <p>Email: contato@laferreira.com.br</p>
-        <p>Endereço: Rua das Flores, 123, São Paulo, SP</p>
-    </div>
-
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2025 La Ferreira | <a href="#">Contate-nos</a></p>
-    </footer>
+<body data-rsssl="1" class="home wp-singular page-template page-template-elementor_canvas page page-id-397 wp-theme-carne elementor-default elementor-template-canvas elementor-kit-288 elementor-page elementor-page-397 e--ua-blink e--ua-chrome e--ua-webkit" data-elementor-device-mode="desktop">
+			<div data-elementor-type="wp-page" data-elementor-id="397" class="elementor elementor-397">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-797d89d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="797d89d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-f666a0b" data-id="f666a0b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-41fcaa0 elementor-widget elementor-widget-image" data-id="41fcaa0" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://www.hamburgueriatradi.com.br">
+							<img decoding="async" width="200" height="120" src="https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/logo-tradi.png" class="attachment-large size-large wp-image-419" alt="">								</a>
+															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7909174" data-id="7909174" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-9beaeea elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9beaeea" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-183ff29" data-id="183ff29" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-b22794d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b22794d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6652751" data-id="6652751" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-13a3c43 elementor-widget elementor-widget-image" data-id="13a3c43" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img fetchpriority="high" decoding="async" width="1024" height="1024" src="https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/Texto-1024x1024.png" class="attachment-large size-large wp-image-401" alt="" srcset="https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/Texto-1024x1024.png 1024w, https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/Texto-300x300.png 300w, https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/Texto-150x150.png 150w, https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/Texto-768x768.png 768w, https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/Texto.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px">															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-109943f" data-id="109943f" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-cbdef75 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cbdef75" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-319e9db" data-id="319e9db" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-768050a elementor-align-center elementor-widget elementor-widget-button" data-id="768050a" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-xl" href="https://api.whatsapp.com/send?phone=551151810855&amp;text=Olá%20Tradi!%20Preciso%20de%20ajuda...">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">SAC TRADI</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-db07c70 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="db07c70" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-da64bf8" data-id="da64bf8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1afbc40 elementor-widget elementor-widget-image" data-id="1afbc40" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="300" height="170" src="https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/unidades-1.png" class="attachment-large size-large wp-image-409" alt="">															</div>
+				</div>
+				<div class="elementor-element elementor-element-1eab128 elementor-widget elementor-widget-text-editor" data-id="1eab128" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;">A Tradi está chegando a novos bairros, é a democratização dos Burgers em toda SP!</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-53e2835 elementor-align-center elementor-widget elementor-widget-button" data-id="53e2835" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-lg" href="https://www.hamburgueriatradi.com.br/tradi-unidades/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Clique aqui</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-b3cb9f3" data-id="b3cb9f3" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-01b5f38 elementor-widget elementor-widget-image" data-id="01b5f38" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="300" height="172" src="https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/historia-1.png" class="attachment-large size-large wp-image-408" alt="">															</div>
+				</div>
+				<div class="elementor-element elementor-element-3383422 elementor-widget elementor-widget-text-editor" data-id="3383422" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;">Quer saber mais de como o Oráculo se tornou o Burger queridinho de nossa cidade?</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-e0f25ab elementor-align-center elementor-widget elementor-widget-button" data-id="e0f25ab" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-lg" href="https://www.hamburgueriatradi.com.br/historia/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Clique aqui</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-a061787" data-id="a061787" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a3ac4b0 elementor-widget elementor-widget-image" data-id="a3ac4b0" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="300" height="173" src="https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/cardapio-1.png" class="attachment-large size-large wp-image-407" alt="">															</div>
+				</div>
+				<div class="elementor-element elementor-element-13d4f6d elementor-widget elementor-widget-text-editor" data-id="13d4f6d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;">Burger de verdade e para todos os gostos, qual o seu Tradi hoje?</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-2c2810a elementor-align-center elementor-widget elementor-widget-button" data-id="2c2810a" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-lg" href="https://tradi-delivery-tatuape.goomer.app/menu">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Clique aqui</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-54c6f70 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="54c6f70" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-a77cd59" data-id="a77cd59" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-979924c elementor-widget elementor-widget-image" data-id="979924c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="500" height="625" src="https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/DSC_6770.jpg" class="attachment-large size-large wp-image-410" alt="" srcset="https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/DSC_6770.jpg 500w, https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/DSC_6770-240x300.jpg 240w" sizes="(max-width: 500px) 100vw, 500px">															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-27f6891" data-id="27f6891" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-8885fe1 elementor-widget elementor-widget-image" data-id="8885fe1" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="500" height="625" src="https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/DSC_6772.jpg" class="attachment-large size-large wp-image-412" alt="" srcset="https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/DSC_6772.jpg 500w, https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/DSC_6772-240x300.jpg 240w" sizes="(max-width: 500px) 100vw, 500px">															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f04ca99" data-id="f04ca99" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-96f314b elementor-widget elementor-widget-image" data-id="96f314b" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="500" height="625" src="https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/DSC_6773.jpg" class="attachment-large size-large wp-image-413" alt="" srcset="https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/DSC_6773.jpg 500w, https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/DSC_6773-240x300.jpg 240w" sizes="(max-width: 500px) 100vw, 500px">															</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4a212de elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4a212de" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-eb124a5" data-id="eb124a5" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9900467 elementor-widget elementor-widget-image" data-id="9900467" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="1024" height="63" src="https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/qualidade-1024x63.png" class="attachment-large size-large wp-image-414" alt="" srcset="https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/qualidade-1024x63.png 1024w, https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/qualidade-300x18.png 300w, https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/qualidade-768x47.png 768w, https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/qualidade-1536x94.png 1536w, https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/qualidade.png 1980w" sizes="(max-width: 1024px) 100vw, 1024px">															</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-324d360 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="324d360" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-148f478" data-id="148f478" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-af551d9 elementor-widget elementor-widget-text-editor" data-id="af551d9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<pre><span style="color: #ffffff;">Unidades:</span></pre><p style="text-align: center;"><span style="color: #ffffff;"><span style="caret-color: #ffffff;"><b>Vila Nova –&nbsp;</b></span><span style="caret-color: #ffffff;"><b>Morumbi –</b></span><span style="caret-color: #ffffff;"><b>Itaim –&nbsp;</b></span><span style="caret-color: #ffffff;"><b>Paulista –&nbsp;</b></span><span style="caret-color: #ffffff;"><b>Lapa –&nbsp;</b></span><span style="caret-color: #ffffff;"><b>Tatuapé –&nbsp;</b></span><span style="caret-color: #ffffff;"><b>Pinheiros –&nbsp;</b></span><span style="caret-color: #ffffff;"><b>Santana</b></span><span style="caret-color: #ffffff;"><b>&nbsp;– Ipiranga</b></span></span></p>								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6b33029" data-id="6b33029" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-91d6200 elementor-widget elementor-widget-image" data-id="91d6200" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="200" height="200" src="https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/logobranco.png" class="attachment-large size-large wp-image-415" alt="" srcset="https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/logobranco.png 200w, https://www.hamburgueriatradi.com.br/wp-content/uploads/2021/11/logobranco-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px">															</div>
+				</div>
+				<div class="elementor-element elementor-element-2d9a32b elementor-widget elementor-widget-text-editor" data-id="2d9a32b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="color: #ffffff;">Todos os direitos reservados </span></p><p><span style="color: #ffffff;">Hamburgueria Tradi 2023</span></p>								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-e53aab8" data-id="e53aab8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7a77652 elementor-shape-circle elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="7a77652" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-bfa4d23" href="https://www.facebook.com/hamburgueriatradi/" target="_blank">
+						<span class="elementor-screen-only">Facebook</span>
+						<i class="fab fa-facebook"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-adcd214" href="https://www.instagram.com/hamburgueriatradi/" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+						<i class="fab fa-instagram"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-whatsapp elementor-repeater-item-9bd730f" href="https://api.whatsapp.com/send?phone=551151810855&amp;text=Olá%20Tradi!%20Preciso%20de%20ajuda..." target="_blank">
+						<span class="elementor-screen-only">Whatsapp</span>
+						<i class="fab fa-whatsapp"></i>					</a>
+				</span>
+					</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/carne\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+			<script>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<script type="text/javascript" src="https://www.hamburgueriatradi.com.br/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://www.hamburgueriatradi.com.br/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.hamburgueriatradi.com.br/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.0.6" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-translations">
+/* <![CDATA[ */
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "contact-form-7", {"translation-revision-date":"2025-05-19 13:41:20+0000","generator":"GlotPress\/4.0.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n > 1;","lang":"pt_BR"},"Error:":["Erro:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
+/* ]]> */
+</script>
+<script type="text/javascript" id="contact-form-7-js-before">
+/* <![CDATA[ */
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/www.hamburgueriatradi.com.br\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    }
+};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.hamburgueriatradi.com.br/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.0.6" id="contact-form-7-js"></script>
+<script type="text/javascript" src="https://www.hamburgueriatradi.com.br/wp-includes/js/comment-reply.min.js?ver=6.8.1" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" src="https://www.hamburgueriatradi.com.br/wp-content/themes/carne/js/nicdark-navigation.js?ver=6.8.1" id="nicdark-navigation-js"></script>
+<script type="text/javascript" id="eael-general-js-extra">
+/* <![CDATA[ */
+var localize = {"ajaxurl":"https:\/\/www.hamburgueriatradi.com.br\/wp-admin\/admin-ajax.php","nonce":"ef21fe31fe","i18n":{"added":"Adicionado ","compare":"Comparar","loading":"Carregando..."},"eael_translate_text":{"required_text":"\u00e9 um campo obrigat\u00f3rio","invalid_text":"Inv\u00e1lido","billing_text":"Faturamento","shipping_text":"Envio","fg_mfp_counter_text":"de"},"page_permalink":"https:\/\/www.hamburgueriatradi.com.br\/","cart_redirectition":"","cart_page_url":"","el_breakpoints":{"mobile":{"label":"Dispositivos m\u00f3veis no modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Dispositivos m\u00f3veis no modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet no modo retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet no modo paisagem","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Notebook","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Tela ampla (widescreen)","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.hamburgueriatradi.com.br/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=6.1.0" id="eael-general-js"></script>
+<script type="text/javascript" src="https://www.hamburgueriatradi.com.br/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.27.5" id="elementor-webpack-runtime-js"></script>
+<script type="text/javascript" src="https://www.hamburgueriatradi.com.br/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.27.5" id="elementor-frontend-modules-js"></script>
+<script type="text/javascript" src="https://www.hamburgueriatradi.com.br/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" id="elementor-frontend-js-before">
+/* <![CDATA[ */
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselPrevSlideMessage":"Slide anterior","a11yCarouselNextSlideMessage":"Pr\u00f3ximo slide","a11yCarouselFirstSlideMessage":"Este \u00e9 o primeiro slide","a11yCarouselLastSlideMessage":"Este \u00e9 o \u00faltimo slide","a11yCarouselPaginationBulletMessage":"Ir para o slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Dispositivos m\u00f3veis no modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Dispositivos m\u00f3veis no modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet no modo retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet no modo paisagem","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Notebook","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Tela ampla (widescreen)","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},
+"hasCustomBreakpoints":false},"version":"3.27.5","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"e_swiper_latest":true,"e_onboarding":true,"home_screen":true,"landing-pages":true,"editor_v2":true,"link-in-bio":true,"floating-buttons":true},"urls":{"assets":"https:\/\/www.hamburgueriatradi.com.br\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/www.hamburgueriatradi.com.br\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/www.hamburgueriatradi.com.br\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"ce53eac460"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","active_breakpoints":["viewport_mobile","viewport_tablet"],"lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":397,"title":"Tradi%20Hamburgueria","excerpt":"","featuredImage":false}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.hamburgueriatradi.com.br/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.27.5" id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span>
+	
 
 </body>
-</html>
-
