@@ -1,198 +1,357 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Restaurante Luiz Felipe</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>La Ferreira</title>
   <style>
     /* Reset básico */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: sans-serif; line-height: 1.5; }
 
-    body {
-      background: #fff8f0;
-      color: #333;
-      line-height: 1.5;
-    }
-
+    /* HEADER */
     header {
-      background: #c0392b;
-      padding: 20px;
-      text-align: center;
-      color: white;
-      font-size: 2rem;
-      font-weight: bold;
+      position: relative;
+      height: 80vh;
+      background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+      display: flex; align-items: center; justify-content: center; flex-direction: column;
+      color: #fff;
     }
-
-    nav {
-      margin-top: 10px;
-      background: #e74c3c;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 10px 0;
+    header::before {
+      content: '';
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
     }
-
-    nav a {
-      color: white;
+    header h1 {
+      position: relative; font-size: 3rem; margin-bottom: 1rem;
+    }
+    .btn-group {
+      position: relative;
+      display: flex; gap: 1rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      border: 2px solid #f3c26b;
+      border-radius: 4px;
+      color: #f3c26b;
       text-decoration: none;
       font-weight: 600;
-      font-size: 1.1rem;
-      transition: color 0.3s;
+      transition: all .3s;
+    }
+    .btn:hover {
+      background: #f3c26b;
+      color: #333;
     }
 
-    nav a:hover {
-      color: #f39c12;
-    }
-
-    .pratos {
-      max-width: 1000px;
-      margin: 40px auto;
+    /* SEÇÃO SOBRE / MISSÃO */
+    .sobre {
       display: flex;
-      justify-content: space-around;
-      gap: 20px;
+      background: #0f1f1e;
+      color: #f3c26b;
+      padding: 4rem 2rem;
+      gap: 2rem;
+      justify-content: center;
       flex-wrap: wrap;
     }
+    .sobre .box {
+      flex: 1 1 300px;
+      max-width: 500px;
+    }
+    .sobre .box h2 {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+    .sobre .box p {
+      color: #eee;
+      font-size: .95rem;
+    }
 
-    .prato {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(192, 57, 43, 0.3);
-      width: 300px;
+    /* SEÇÃO MENU */
+    .menu {
+      background: #faf6f3;
+      padding: 4rem 2rem;
+    }
+    .menu h2 {
       text-align: center;
-      padding: 15px;
-      transition: transform 0.3s ease;
+      font-size: 2.2rem;
+      margin-bottom: .5rem;
+      color: #333;
     }
-
-    .prato img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
-
-    .prato:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 15px rgba(192, 57, 43, 0.6);
-    }
-
-    .prato h3 {
-      margin: 15px 0 8px;
-      color: #c0392b;
-    }
-
-    .prato p {
+    .menu p.intro {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 2.5rem;
       color: #555;
-      font-size: 1rem;
     }
-
-    .avaliacoes {
-      max-width: 700px;
-      margin: 50px auto 70px;
-      text-align: center;
+    .pratos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
     }
-
-    .avaliacoes h2 {
-      margin-bottom: 30px;
-      color: #c0392b;
-      font-size: 2rem;
+    .prato {
+      display: flex;
+      flex-wrap: wrap;
+      background: #fff;
+      border-top: 4px solid #0f1f1e;
+      padding: 1rem;
     }
-
-    .avaliacao {
-      background: #f9e5e3;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 15px;
-      box-shadow: 0 0 8px rgba(192, 57, 43, 0.2);
+    .prato:nth-child(odd) .txt { order: 2; padding-left: 1.5rem; }
+    .prato:nth-child(odd) img { order: 1; }
+    .prato:nth-child(even) .txt { order: 1; padding-right: 1.5rem; text-align: right; }
+    .prato:nth-child(even) img { order: 2; }
+    .prato img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 6px;
     }
-
-    .avaliacao p {
-      font-style: italic;
+    .prato .txt {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .prato .txt h3 {
+      margin-bottom: .5rem;
+      color: #0f1f1e;
+    }
+    .prato .txt p {
+      font-size: .9rem;
       color: #444;
+      margin-bottom: .3rem;
     }
-
-    .avaliacao span {
-      display: block;
-      margin-top: 10px;
+    .prato .txt .preco {
       font-weight: bold;
-      color: #c0392b;
+      margin-top: .5rem;
+      color: #0f1f1e;
     }
 
-    footer {
-      background: #c0392b;
-      color: white;
+    /* SEÇÃO DEPOIMENTOS */
+    .depoimentos {
+      background: #faf6f3;
+      padding: 4rem 2rem;
       text-align: center;
-      padding: 15px 10px;
-      font-size: 0.9rem;
+    }
+    .depoimentos .slider {
+      max-width: 700px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+      height: 120px;
+    }
+    .slide {
+      position: absolute;
+      width: 100%;
+      opacity: 0;
+      transition: opacity .5s;
+    }
+    .slide.active { opacity: 1; }
+    .slide p {
+      font-style: italic;
+      color: #333;
+      margin-bottom: .8rem;
+    }
+    .slide span {
+      font-weight: bold;
+      color: #0f1f1e;
+    }
+    /* simples bolinhas */
+    .dots {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: .5rem;
+    }
+    .dots button {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      border: none;
+      background: #ccc;
+      cursor: pointer;
+    }
+    .dots button.active { background: #0f1f1e; }
+
+    /* FOOTER */
+    footer {
+      background: #0f1f1e;
+      color: #f3c26b;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .contato-info, .contato-form {
+      flex: 1 1 300px;
+      max-width: 400px;
+    }
+    .contato-info p, .contato-info a {
+      margin-bottom: .6rem;
+      font-size: .9rem;
+      color: #f3c26b;
+      text-decoration: none;
+      display: block;
+    }
+    .contato-form form {
+      display: flex;
+      flex-direction: column;
+      gap: .8rem;
+    }
+    .contato-form input,
+    .contato-form textarea {
+      padding: .6rem;
+      border: 1px solid #555;
+      border-radius: 4px;
+      font-size: .9rem;
+    }
+    .contato-form button {
+      padding: .7rem;
+      border: none;
+      background: #f3c26b;
+      color: #0f1f1e;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 4px;
     }
 
-    /* Responsivo */
-    @media(max-width: 768px) {
-      .pratos {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .prato {
-        width: 90%;
-      }
+    /* RESPONSIVO */
+    @media(max-width: 900px) {
+      .pratos { grid-template-columns: 1fr; }
+      .prato { flex-direction: column; text-align: center; }
+      .prato:nth-child(even) .txt { text-align: center; padding: 0; }
     }
   </style>
 </head>
 <body>
 
-<header>
-  Restaurante Luiz Felipe
-  <nav>
-    <a href="#pratos">Menu</a>
-    <a href="#avaliacoes">Avaliações</a>
-    <a href="#contato">Contato</a>
-  </nav>
-</header>
+  <!-- HEADER -->
+  <header>
+    <h1>La Ferreira</h1>
+    <div class="btn-group">
+      <a href="#servico" class="btn">Serviço</a>
+      <a href="#cardapio" class="btn">Cardápio</a>
+    </div>
+  </header>
 
-<section id="pratos" class="pratos">
-  <div class="prato">
-    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80" alt="Prato 1" />
-    <h3>Prato Delicioso 1</h3>
-    <p>Descrição do prato 1, saboroso e especial.</p>
-  </div>
-  <div class="prato">
-    <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb30?auto=format&fit=crop&w=600&q=80" alt="Prato 2" />
-    <h3>Prato Delicioso 2</h3>
-    <p>Descrição do prato 2, feito com ingredientes frescos.</p>
-  </div>
-  <div class="prato">
-    <img src="https://images.unsplash.com/photo-1543352634-4d18a4a02707?auto=format&fit=crop&w=600&q=80" alt="Prato 3" />
-    <h3>Prato Delicioso 3</h3>
-    <p>Descrição do prato 3, preparado com carinho.</p>
-  </div>
-</section>
+  <!-- SOBRE / MISSÃO -->
+  <section class="sobre">
+    <div class="box">
+      <h2>Sobre nós</h2>
+      <p>Na La Ferreira, oferecemos uma experiência gastronômica única, unindo tradição e inovação para transformar suas refeições em momentos inesquecíveis.</p>
+    </div>
+    <div class="box">
+      <h2>Nossa missão</h2>
+      <p>Promover o melhor da culinária contemporânea, valorizando ingredientes de alta qualidade e atendimento impecável, para encantar cada cliente.</p>
+    </div>
+  </section>
 
-<section id="avaliacoes" class="avaliacoes">
-  <h2>Avaliações dos Clientes</h2>
+  <!-- MENU -->
+  <section id="cardapio" class="menu">
+    <h2>Menu do La Ferreira</h2>
+    <p class="intro">Explore nossa seleção de pratos exclusivos, preparados com todo o cuidado e atenção aos detalhes.</p>
+    <div class="pratos">
+      <div class="prato">
+        <img src="https://images.unsplash.com/photo-1543352634-4d18a4a02707?auto=format&fit=crop&w=600&q=80" alt="Especialidade da Casa">
+        <div class="txt">
+          <h3>Especialidade da Casa</h3>
+          <p>Camembert gratinado com ervas finas, acompanha torradas artesanais.</p>
+          <span class="preco">R$ 79,90</span>
+        </div>
+      </div>
+      <div class="prato">
+        <div class="txt">
+          <h3>Prato do Dia</h3>
+          <p>Risoto de camarão ao molho cítrico, finalizado com raspas de limão siciliano.</p>
+          <span class="preco">R$ 89,90</span>
+        </div>
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80" alt="Prato do Dia">
+      </div>
+      <div class="prato">
+        <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb30?auto=format&fit=crop&w=600&q=80" alt="Sobremesa Irresistível">
+        <div class="txt">
+          <h3>Sobremesa Irresistível</h3>
+          <p>Petit gâteau de chocolate com sorvete de baunilha e calda quente.</p>
+          <span class="preco">R$ 34,90</span>
+        </div>
+      </div>
+      <div class="prato">
+        <div class="txt">
+          <h3>Sabores do Mar</h3>
+          <p>Polvo grelhado sobre cama de feijão preto, toque de coentro e azeite aromático.</p>
+          <span class="preco">R$ 99,90</span>
+        </div>
+        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=600&q=80" alt="Sabores do Mar">
+      </div>
+    </div>
+  </section>
 
-  <div class="avaliacao">
-    <p>"Comida excelente e atendimento maravilhoso!"</p>
-    <span>- João S.</span>
-  </div>
+  <!-- DEPOIMENTOS -->
+  <section class="depoimentos">
+    <div class="slider">
+      <div class="slide active">
+        <p>"La Ferreira transformou meus momentos em experiências incríveis."</p>
+        <span>- Amanda G.</span>
+      </div>
+      <div class="slide">
+        <p>"Atendimento impecável e pratos sensacionais. Recomendo 100%!"</p>
+        <span>- Rafael T.</span>
+      </div>
+      <div class="slide">
+        <p>"Ambiente aconchegante e sabores inesquecíveis."</p>
+        <span>- Juliana S.</span>
+      </div>
+    </div>
+    <div class="dots">
+      <button class="active"></button>
+      <button></button>
+      <button></button>
+    </div>
+  </section>
 
-  <div class="avaliacao">
-    <p>"Ambiente acolhedor e pratos incríveis. Recomendo!"</p>
-    <span>- Maria P.</span>
-  </div>
+  <!-- FOOTER -->
+  <footer>
+    <div class="contato-info">
+      <p>Email: contato@laferreira.com</p>
+      <p>Telefone: (41) 98765-4321</p>
+      <p>Endereço: Rua das Flores, 123 - Curitiba, PR</p>
+    </div>
+    <div class="contato-form">
+      <form>
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu email" required>
+        <textarea name="mensagem" rows="4" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </footer>
 
-  <div class="avaliacao">
-    <p>"Melhor restaurante da cidade, sempre volto!"</p>
-    <span>- Carlos M.</span>
-  </div>
+  <!-- Script simples para slider -->
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const dots   = document.querySelectorAll('.dots button');
+    let current = 0;
 
-</section>
+    function goToSlide(idx) {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      slides[idx].classList.add('active');
+      dots[idx].classList.add('active');
+      current = idx;
+    }
 
-<footer id="contato">
-  &copy; 2025 Restaurante Luiz Felipe — Contato: (11) 99999-9999 | luizfelipe@email.com
-</footer>
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => goToSlide(i));
+    });
+
+    // auto slide a cada 5s
+    setInterval(() => {
+      let next = (current + 1) % slides.length;
+      goToSlide(next);
+    }, 5000);
+  </script>
 
 </body>
 </html>
+
