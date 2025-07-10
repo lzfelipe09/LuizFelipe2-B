@@ -1,3 +1,9 @@
-#footer {
+.seu-selector-da-barra {
+  display: none !important;
+}
+.footer-ad-bar {
+  display: none !important;
+}
+.avaliacao:nth-child(n + 4) {
   display: none !important;
 }
